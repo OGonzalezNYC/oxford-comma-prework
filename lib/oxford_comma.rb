@@ -6,10 +6,10 @@ def oxford_comma(array)
     return "#{array.join(" and ")}"
   end 
   if array.length > 2
-    
+    callback = array[-1]
     array.delete_at(-1)
     string = array.join(", ")
-    string << ", and #{array.delete_at(-1)}"
-  end 
+    string << ", and #{callback}"
+   end  
 end 
 
